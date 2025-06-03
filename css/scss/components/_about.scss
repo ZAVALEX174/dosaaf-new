@@ -1,0 +1,211 @@
+.about {
+  //padding: 40px 0 60px;
+  margin-bottom: 126px;
+
+
+  @media #{$phone} {
+    //padding: 20px 0 30px;
+    margin-bottom: 64px;
+  }
+
+  .about__title {
+    align-self: center;
+    margin-bottom: 26px;
+
+    @media #{$phone} {
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+  }
+
+  .about__img-mobile {
+    display: none;
+    width: 100%;
+    height: auto;
+
+    @media #{$tablet} {
+      display: block;
+      margin-bottom: 45px;
+      margin-top: -60px;
+    }
+
+    @media #{$phone} {
+      margin-bottom: 22px;
+    }
+
+    img {
+      width: 100%;
+      //height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .about__container {
+    max-width: 1520px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @media #{$tablet} {
+      width: 100%;
+      align-items: center;
+    }
+
+
+
+    .about__wrapper {
+      max-width: 69%;
+      position: relative;
+
+      div {
+        position: relative;
+        z-index: 111;
+        margin-bottom: 27px;
+
+        @media #{$tablet} {
+          text-align: start;
+        }
+
+        @media #{$phone} {
+          margin-bottom: 20px;
+        }
+
+        h3 {
+          margin: 0;
+          margin-bottom: 5px;
+          font-weight: 700;
+          font-size: 25px;
+          //line-height: 0.88;
+          line-height: 1;
+          color: #000;
+
+          @media #{$phone} {
+            margin-bottom: -3px;
+          }
+        }
+
+        p {
+          font-family: $font-family-title;
+          font-weight: 500;
+          font-size: clamp(14px, 0.83vw, 16px);
+          color: #6f7279;
+          line-height: 1.08;
+
+          @media #{$phone} {
+            line-height: 1;
+          }
+        }
+      }
+
+      div:last-of-type {
+        margin-bottom: 37px;
+      }
+
+      .about__btn {
+        display: inline-flex;
+        background: transparent;
+        align-items: center;
+        font-weight: 700;
+        font-size: 20px;
+        color: #244f77;
+        transition: 0.3s ease-in;
+        cursor: pointer;
+        position: relative;
+        z-index: 150;
+        border: 1px solid #d2d7df;
+        width: 200px;
+
+
+
+        svg {
+          color: #56a2e9;
+          margin-left: 32px;
+        }
+
+        @media #{$tablet} {
+          width: 100%;
+          display: inline-flex;
+          justify-content: center;
+          margin-top: 0;
+        }
+      }
+
+      .about__btn::after {
+        position: absolute;
+        content: '';
+        top: 50%;
+        transform: translateY(-50%);
+        right: 21px;
+        background-image: url("../images/btn-arr-right.svg");
+        background-repeat: no-repeat;
+        width: 14px;
+        height: 14px;
+      }
+
+      .about__btn:hover {
+        color: #56a2e9;
+        transition: 0.3s ease-in;
+      }
+
+      @media #{$notebook} {
+        max-width: 60%;
+      }
+
+      @media #{$tablet} {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        text-align: center;
+        padding-top: 0;
+      }
+    }
+
+    .about__wrapper::before {
+      content: '';
+      position: absolute;
+      width: 1033px;
+      height: 100%;
+      top: -2%;
+      right: calc(100% - 30%);
+      /* left: 0; */
+      background-image: url('../images/about/flagi3752.svg');
+      /* background-position: 0 0; */
+      background-size: contain;
+      background-repeat: no-repeat;
+      z-index: 99;
+
+      @media #{$desktop} {
+        right: calc(100% - 38%);
+      }
+
+      @media #{$laptop} {
+        right: calc(100% - 41%);
+      }
+
+      @media #{$notebook} {
+        width: 850px;
+        right: calc(100% - 27%);
+      }
+
+      @media #{$notebook_s} {
+        top: 12%;
+        width: 100%;
+        height: 80%;
+        right: calc(100% - 27%);
+      }
+
+      @media #{$tablet} {
+        display: none;
+        max-width: 999px;
+        height: 400px;
+        background-image: none;
+        background-position: center;
+        background-size: cover;
+        top: -2%;
+        right: 0;
+        left: -10px;
+        width: calc(100% + 20px);
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+// Fonts
+$font-family-base:    'Bebas Neue', sans-serif;
+$font-family-title:  'Gilroy', sans-serif;
+$font-size-base:       16px;
+$font-weight-base:     400;
+$font-path:             '../fonts';
+
+// Color
+$color-main:              #000000;
+$color-second:            #222222;
+$color-white:             #FFFFFF;
+$color-yellow:            #FFF383;
+$color-orange:            #DEBD55;
+$color-pink:              #CFA0A9;
+$color-light-grey:        #E1E1E1;
+
+// Responsive width
+$desktop: 'screen and (max-width: 1680px)';
+$laptop: 'screen and (max-width: 1440px)';
+$notebook: 'screen and (max-width: 1366px)';
+$notebook_s: 'screen and (max-width: 1280px)';
+$laptop_s: 'screen and (max-width: 1024px)';
+$tablet: 'screen and (max-width: 999px)';
+$tablet-mini: 'screen and (max-width: 767px)';
+$phone: 'screen and (max-width: 500px)';
+$phone_s: 'screen and (max-width: 375px)';
+$phone-mini: 'screen and (max-width: 320px)';
+
+$notebook-height: 'screen and (max-height: 800px)';
+$desktop_x: 'screen and (max-width: 1780px)';
+
+//'Arial Narrow'
+

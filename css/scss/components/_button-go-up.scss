@@ -1,0 +1,36 @@
+.button-go-up {
+  background: transparent;
+  position: fixed;
+  top: 83%;
+  right: 0;
+  z-index: 500;
+  display: none;
+
+  @media #{$laptop_s} {
+    display: none;
+  }
+
+  .btn-go-up {
+    border-radius: 13px 0 0 13px;
+    box-shadow: 0 4px 60px 0 rgba(0, 0, 0, 0.15);
+    background: rgba(25, 33, 50, 0.8);
+    padding: 0 18px;
+  }
+  .btn-go-up:hover {
+    border-radius: 13px 0 0 13px;
+    background: rgba(25, 23, 30, 0.8);
+    padding: 0 18px;
+
+    svg {
+      color: #fff;
+    }
+  }
+}
+
+.button-go-up__show {
+  display: block;
+
+  @media #{$laptop_s} {
+    display: none;
+  }
+}

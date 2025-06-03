@@ -1,0 +1,300 @@
+.consultation {
+  margin: 0 0 212px;
+  padding-top: 85px;
+
+  //@media #{$notebook_s} {
+  //  padding: 10px 0 94px;
+  //}
+
+  @media #{$laptop_s} {
+    margin: 0 0 46px;
+  }
+
+  @media #{$tablet} {
+    margin: 0 0 46px 0;
+    padding-top: 0;
+  }
+
+  .consultation__container {
+    margin: 0 0 0 0;
+    display: flex;
+    width: 100%;
+    position: relative;
+    z-index: 300;
+
+    @media #{$laptop_s} {
+      margin: 122px 0 122px 0;
+      grid-template-rows: 40px 33px;
+    }
+
+    @media #{$tablet} {
+      margin: 38px 0 46px 0;
+    }
+
+    @media #{$phone} {
+      margin: 0 0 0 0;
+    }
+
+    .consultation__bg {
+      position: absolute;
+      background: url("../images/consultation/bg-usor.svg") no-repeat left/contain;
+      top: -157px;
+      left: -62px;
+      width: 668px;
+      height: 558px;
+      z-index: 900;
+
+      @media #{$laptop_s} {
+        max-width: 668px;
+        width: 100%;
+        height: 100%;
+        top: -30px;
+      }
+
+      @media #{$tablet} {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      @media #{$phone} {
+        top: -20px;
+        height: 280px;
+        z-index: 0;
+      }
+    }
+
+
+    .consultation__form {
+      background:  url("../images/consultation/osnBG.png") no-repeat left/cover;
+      display: flex;
+      align-items: center;
+      max-width: 1500px;
+      width: 100%;
+      border-radius: 40px;
+
+      @media #{$laptop_s} {
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background: url("../images/consultation/bgmobil.png") no-repeat center / cover;
+
+        @media #{$phone} {
+          //padding: 45px 15px 19px 15px;
+          //padding-top: 45px;
+        }
+      }
+
+      form {
+        padding: 25px 50px 18px 36px;
+        position: relative;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        @media #{$laptop_s} {
+          padding: 28px 15px 19px 15px;
+          justify-content: center;
+          align-items: center;
+        }
+
+        @media #{$phone} {
+          padding: 45px 15px 19px 15px;
+        }
+
+        label {
+          display: block;
+          font-weight: 400;
+          font-size: clamp(37px, 2.6vw, 50px);
+          text-transform: uppercase;
+          color: #fff;
+          margin-bottom: 12px;
+
+          span {
+            font-family: $font-family-base;
+            font-weight: 400;
+            font-size: clamp(37px, 2.6vw, 50px);
+            text-transform: uppercase;
+            color: #34c3ff;
+          }
+        }
+
+        input {
+          background: transparent;
+          display: inline-flex;
+          outline: none;
+          border: none;
+          border-radius: 10px;
+          //backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+          background: rgba(187, 231, 255, 0.1);
+          max-width: 714px;
+          margin: 0;
+          width: 100%;
+          padding: 13px 21px;
+          margin-bottom: 12px;
+          font-family: $font-family-title;
+          font-weight: 400;
+          font-size: 18px;
+          color: #fff;
+
+          @media #{$notebook_s} {
+            width: 568px;
+          }
+
+          @media #{$laptop_s} {
+            max-width: 568px;
+            width: 100%;
+            padding: 15px 21px;
+          }
+        }
+
+        input:nth-of-type(2) {
+          @media #{$laptop_s} {
+            margin-bottom: 181px;
+          }
+        }
+
+        input::before {
+          content: '';
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          backdrop-filter: blur(15px);
+        }
+
+        .wrapper__link {
+          padding-top: 5px;
+          max-width: 715px;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+
+          @media #{$notebook_s} {
+            max-width: 568px;
+          }
+
+          @media #{$laptop_s} {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 12px;
+          }
+
+          .span-warning {
+            display: inline-block;
+            max-width: 330px;
+            font-family: $font-family-title;
+            font-weight: 500;
+            font-size: 12px;
+            text-align: right;
+            color: #eef2f9;
+            margin-right: 23px;
+            opacity: 0.5;
+
+            @media #{$laptop_s} {
+              margin-left: 0;
+              margin-right: 0;
+              text-align: center;
+            }
+
+            .blue-accent {
+              color: #34C3FF;
+              font-style: normal;
+            }
+
+            .underline {
+              font-style: normal;
+              text-decoration: underline;
+            }
+          }
+
+          a {
+            padding-top: 1px;
+            padding-left: 51px;
+            padding-right: 22px;
+            display: inline-flex;
+            align-items: center;
+            font-size: 24px;
+            width: 200px;
+            justify-content: center;
+
+            @media #{$phone} {
+              width: 150px;
+              font-size: 20px;
+              padding: 2px 14px 0 37px;
+              line-height: 38px;
+              height: 40px;
+            }
+
+            svg {
+              margin-left: 30px;
+              color: #fff;
+
+              @media #{$phone} {
+                margin-left: 14px;
+              }
+            }
+          }
+
+            a:hover {
+              color: #34c3ff;
+
+              svg {
+                color: #34c3ff;
+              }
+            }
+
+
+        }
+      }
+
+      .foto {
+        position: absolute;
+        z-index: 50;
+        //margin-left: -64%;
+        background: url("../images/consultation/girlBg.png") no-repeat center/cover;
+        border-radius: 154px;
+        top: -25px;
+        left: 35%;
+        max-width: 674px;
+        height: 336px;
+        width: 100%;
+
+        @media #{$notebook_s} {
+          left: 32%;
+        }
+
+        @media #{$laptop_s} {
+          //display: none;
+          border-radius: 10px;
+          left: 50%;
+          transform: translateX(-50%);
+          top: 45%;
+          max-width: 320px;
+          height: 156px;
+          z-index: 11000;
+        }
+
+        @media #{$phone} {
+          top: 46%;
+        }
+      }
+
+      //.consultation__bg_right {
+      //  position: relative;
+      //  z-index: 45;
+      //  background: url("../images/consultation/bgRight.png") no-repeat left / cover;
+      //  max-width: 539px;
+      //  height: 283px;
+      //
+      //  @media #{$phone} {
+      //    top: 46%;
+      //    background: url("../images/consultation/bgmobil.png") no-repeat center / contain;
+      //    height: 497px;
+      //  }
+      //}
+    }
+  }
+}

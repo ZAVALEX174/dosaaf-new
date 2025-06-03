@@ -1,0 +1,282 @@
+.service-page__title {
+  margin-bottom: 0;
+
+  @media #{$phone} {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.service-page {
+  margin-top: 0;
+  //margin-top: 53px;//для проверки отступов
+  //padding-bottom: 46px;
+  z-index: 505;
+  margin-bottom: 4px;
+
+  @media #{$phone} {
+    padding-bottom: 0;
+  }
+
+  .servises__container {
+
+      @media #{$phone} {
+
+      }
+
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .service-page__btn {
+      display: none;
+    }
+
+
+
+    .swiper-service-page {
+      min-height: 310px;
+      //padding-bottom: 40px;
+      //margin-bottom: 30px;
+      //padding-top: 30px;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      padding-top: 0;
+
+      @media #{$phone} {
+        margin-bottom: 0;
+        //padding-top: 20px;
+        //height: 240px;
+        //padding-top: 60px;
+        //min-height: 310px;
+        min-height: 270px;
+        padding-bottom: 0;
+        padding-top: 0;
+      }
+
+      @media #{$phone_s} {
+        margin-bottom: 0;
+      }
+
+      //margin-bottom: 30px;
+      //padding-top: 20px;
+
+      .service-page__swiper-wrapper {
+
+        .service-page__swiper-slide {
+          min-height: 310px;
+
+          @media #{$phone} {
+            min-height: 176px;
+          }
+
+          .service-page__slide-box {
+
+            @media #{$tablet-mini} {
+
+              p {
+                font-size: 20px;
+              }
+            }
+
+            @media #{$phone} {
+
+              p {
+                font-size: 30px;
+              }
+            }
+
+            img {
+              padding-top: 20px;
+
+              @media #{$phone} {
+                padding-top: 0;
+              }
+            }
+          }
+
+          .selected {
+            //margin-top: -20px;
+            transform: translateY(-30px);
+
+            p {
+              color: #56a2e9;
+            }
+            @media #{$phone} {
+              transform: none;
+            }
+
+            @media #{$phone} {
+              margin-top: 0;
+            }
+          }
+
+          .service-blur {
+            margin-top: -20px;
+
+            @media #{$phone} {
+              display: none;
+            }
+          }
+        }
+
+        @media #{$phone} {
+          .service-page__swiper-slide:not(:nth-child(2)) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.service__desc {
+  //margin-top: -37px;
+  margin-bottom: 122px;
+
+  @media #{$phone} {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    }
+
+  h2 {
+    margin-bottom: 36px;
+
+    @media #{$phone} {
+      margin-bottom: 16px;
+    }
+  }
+
+  p {
+    margin-bottom: 22px;
+    line-height: 1.5;
+
+    @media #{$phone} {
+      margin-bottom: 19px;
+      line-height: 1.1;
+    }
+
+  }
+
+  p:last-of-type {
+    margin-bottom: 60px;
+
+    @media #{$phone} {
+      margin-bottom: 40px;
+    }
+  }
+
+  .service__desc-wrapper {
+    padding-left: 19px;
+
+    @media #{$phone} {
+      padding-left: 14px;
+    }
+
+    ul {
+      font-family: $font-family-title, sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+
+      li {
+        margin: 0 0 26px 0;
+        position: relative;
+        padding: 0;
+
+        @media #{$phone} {
+          margin: 0 0 22px 0;
+        }
+
+        a {
+          display: inline-flex;
+          align-items: center;
+          color: #244f77;
+          padding-left: 30px;
+
+          //@media #{$phone} {
+          //  padding-left: 30px;
+          //}
+        }
+
+        a:hover {
+          color: #34C3FF;
+        }
+      }
+
+      li:last-child {
+        margin: 0;
+      }
+
+      li::before {
+        position: absolute;
+        content: '';
+        top: 6px;
+        left: 0;
+        width: 12px;
+        height: 12px;
+        background-image: url("../images/btn-arr-right.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        @media #{$phone} {
+        }
+      }
+
+      li:hover::before {
+        background-image: url("../images/arr-right-active.svg");
+      }
+    }
+
+    @media #{$phone} {
+      padding-left: 0;
+    }
+  }
+}
+
+
+.s-p {
+  .sp {
+    //padding: 64px 0 42px;
+    margin: 0 0 160px;
+
+    @media #{$phone} {
+      margin-bottom: 106px;
+    }
+
+    .consultation__container-servises {
+      //padding: 91px 0 122px 0;
+
+      @media #{$phone} {
+        //padding: 0 0 103px 0;
+      }
+
+      .consultation__form-service {
+
+        .service-foto {
+          @media #{$phone} {
+            top: 37%;
+          }
+        }
+      }
+    }
+
+    .consultation__bg-servisespage {
+      @media #{$phone} {
+        top: -19px;
+        height: 296px;
+      }
+    }
+  }
+
+  .sticky-box {
+    margin-bottom: 8px;
+  }
+
+}

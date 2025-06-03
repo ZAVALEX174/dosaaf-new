@@ -1,0 +1,108 @@
+.servises-page {
+
+  padding: 10px 0 10px 0;
+
+}
+
+.servises-page-container {
+
+  .swiper__container {
+
+    @media #{$phone} {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+  .servises-page__title {
+    margin-bottom: 5px;
+    margin-top: 20px;
+
+    @media #{$phone} {
+      justify-content: center;
+    }
+  }
+
+  .servises-page__btn{
+    display: none;
+  }
+}
+
+  .about {
+    padding: 10px 0 106px;
+
+    @media #{$laptop_s} {
+      display: none;
+    }
+
+    .servises-page__about-title {
+      margin-bottom: 60px;
+    }
+
+    .about-page__container {
+
+      .about-page__wrapper {
+        max-width: 65%;
+
+        div {
+          margin-bottom: 34px;
+        }
+
+        div:last-of-type {
+          margin-bottom: 24px;
+        }
+
+        .about__btn {
+          margin-top: 0;
+        }
+      }
+
+      .about-page__wrapper::before {
+        top: -18%;
+        right: calc(100% - 31%);
+        background-size: cover;
+
+        @media #{$notebook_s} {
+          top: -2%;
+          right: calc(100% - 18%);
+        }
+      }
+    }
+  }
+
+  .consultation__servises {
+    padding: 64px 0 125px;
+
+    @media #{$laptop_s} {
+      padding: 10px 0 10px;
+    }
+
+    @media #{$phone} {
+      padding: 40px 0 10px;
+    }
+
+    .consultation__container-servises {
+
+      @media #{$laptop_s} {
+        padding: 10px 0 122px 0;
+      }
+
+      @media #{$phone} {
+        padding: 0 0 90px 0;
+      }
+
+      .consultation__form{
+        .foto {
+
+          @media #{$laptop_s} {
+            top: 36%;
+          }
+
+          @media #{$phone} {
+            top: 38%;
+          }
+        }
+      }
+    }
+  }
+}
+
